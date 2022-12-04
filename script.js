@@ -66,18 +66,6 @@ https://apis.map.kakao.com/web/sample/addr2coord/ (주소로 장소 표시하기
 // 주소-좌표 변환 객체를 생성합니다
 var geocoder = new kakao.maps.services.Geocoder();
 
-async function setMap(){
-  for(var i = 0; i < dataSet.length; i++){
-    let coords = await getCoordsByAddress(dataSet[i].address);
-    
-    var marker = new kakao.maps.Marker({
-      map: map,
-      position: coords,
-    });
-  }
-}
-
-
 // 주소-좌표 변환 함수
 function getCoordsByAddress(address) {
   return new Promise((resolve, reject) => {
