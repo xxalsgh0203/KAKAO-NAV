@@ -39,19 +39,19 @@ const dataSet = [
     title: "희락돈까스",
     address: "서울 영등포구 양산로 210",
     url: "https://www.youtube.com/watch?v=1YOJbOUR4vw&t=88s",
-    category: "양식",
+    category: "Western",
   },
   {
     title: "즉석우동짜장",
     address: "서울 영등포구 대방천로 260",
     url: "https://www.youtube.com/watch?v=cAKbaXgs3n0",
-    category: "한식",
+    category: "Korean",
   },
   {
     title: "아카사카",
     address: "서울 서초구 서초대로74길 23",
     url: "https://www.youtube.com/watch?v=mPZTFNbyuss&t=81s",
-    category: "일식",
+    category: "Japanese",
   },
 ];
 
@@ -186,14 +186,14 @@ function makeOutListener(infowindow) {
 
 // 카테고리
 const categoryMap = {
-  korea: "한식",
-  china: "중식",
-  japan: "일식",
-  america: "양식",
-  wheat: "분식",
-  meat: "구이",
-  sushi: "회/초밥",
-  etc: "기타",
+  Korean: "Korean",
+  Chinese: "Chinese",
+  Japanese: "Japanese",
+  Western: "Western",
+  Snackbar: "Snack bar",
+  RoastedFood: "Roasted Food",
+  Sushi: "Sushi",
+  Other: "Other",
 };
 
 const categoryList = document.querySelector(".category-list");
